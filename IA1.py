@@ -30,5 +30,7 @@ app.layout = html.Div([
 def update_output(xcol):
     return plot_altair(xcol)
 
+server = app.server
+
 if __name__ == '__main__':
     app.run_server(debug=True)
